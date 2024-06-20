@@ -9,20 +9,22 @@ Experiments to check how much the leraning rate and the activation function affe
 
 ### Experiment 1 - CNN with LeakyReLU activation function, SGD optimizer with lr=0.0001
 
-![](img/tensorboard_custom_cnn1_sgd.png)
+With such a low learning rate, the model is not able to learn anything.
+
+![](docs/img/tensorboard_custom_cnn1_sgd.png)
 
 - Test accuracy: 0.0994
 - Test loss: 2.30374
 
 All metrics in one plot:
 
-![](plots/metrics_custom_cnn1_lr0001.png)
+![](docs/plots/metrics_custom_cnn1_lr0001.png)
 
 This experiment has a very low accuracy and high loss, which is expected since the learning rate is very low.
 
 ### Experiment 2 - CNN with Adam optimizer and LeakyReLU activation function
 
-![](img/tensorboard_custom_cnn2_adam.png)
+![](docs/img/tensorboard_custom_cnn2_adam.png)
 
 - Test accuracy: 0.4146
 - Test loss: 1.605
@@ -33,11 +35,11 @@ This experiment has a higher accuracy and lower loss than the previous one, whic
 
 All metrics in one plot:
 
-![](plots/metrics_custom_cnn2_adam.png)
+![](docs/plots/metrics_custom_cnn2_adam.png)
 
 ### Experiment 3 - CNN with Tanh as activation function and Adam optimizer
 
-![](img/tensorboard_custom_cnn3_tanh.png)
+![](docs/img/tensorboard_custom_cnn3_tanh.png)
 
 - Test accuracy: 0.4117
 - Test loss: 1.6747
@@ -47,7 +49,7 @@ This experiment has a similar accuracy and loss to the previous one, which is ex
 
 All metrics in one plot:
 
-![](plots/metrics_custom_cnn3_tanh.png)
+![](docs/plots/metrics_custom_cnn3_tanh.png)
 
 ## Task 2
 
@@ -57,14 +59,14 @@ Experiments to leverage transfer learning and fine-tuning to improve the model's
 
 #### Experiment 1 - Fine tuning
 
-![](img/tensorboard_alexnet_fine_tuning.png)
+![](docs/img/tensorboard_alexnet_fine_tuning.png)
 
 - Test loss: 0.779.
 - Test accuracy: 0.7299.
 
 All metrics in one plot:
 
-![](plots/metrics_alexnet_fine_tuning.png)
+![](docs/plots/metrics_alexnet_fine_tuning.png)
 
 #### Experiment 2 - Feature Extraction
 
@@ -83,13 +85,13 @@ Fine-tuning has a higher accuracy and lower loss than feature extraction. This i
 - Test loss: 0.1524
 - Test accuracy: 0.9588.
 
-![](img/tensorboard_mnist_cnn.png)
+![](docs/img/tensorboard_mnist_cnn.png)
 
 The experiment has a high accuracy and low loss, which is expected since the MNIST dataset is a simple dataset.
 
 All metrics in one plot:
 
-![](plots/metrics_mnist_cnn_train.png)
+![](docs/plots/metrics_mnist_cnn_train.png)
 
 
 #### Experiment 2 - Pretrained MNIST CNN for SVHN dataset
@@ -105,14 +107,14 @@ but it performs better than if the model wasn't trained at all.
 - Test loss: 0.8541
 - Test accuracy: 0.767
 
-![](img/tensorboard_svhn_fine_tuning.png)
+![](docs/img/tensorboard_svhn_fine_tuning.png)
 
 The experiment has a higher accuracy and lower loss than the previous one, which is expected since the model is being
  fine-tuned on the SVHN dataset.
 
 All metrics in one plot:
 
-![](plots/metrics_svhn_fine_tuning.png)
+![](docs/plots/metrics_svhn_fine_tuning.png)
 
 # Project Structure
 
