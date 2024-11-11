@@ -1,9 +1,11 @@
 # Computer Vision Experiments
 
+Computer Vision classification experiments training and testing Convolutional Neural Networks (CNNs) to analyze the impact of different parameters and the use of techniques such as feature extraction and transfer learning.
+
 # Results
 
 
-## Task 1
+## Impact of Different Parameters meanwhile Training
 
 Experiments to check how much the leraning rate and the activation function affect the model's performance.
 
@@ -51,7 +53,7 @@ All metrics in one plot:
 
 ![](docs/plots/metrics_custom_cnn3_tanh.png)
 
-## Task 2
+## Transfer Learning and Feature Extraction using pre-trained models
 
 Experiments to leverage transfer learning and fine-tuning to improve the model's performance.
 
