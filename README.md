@@ -5,9 +5,9 @@ Computer Vision classification experiments training and testing Convolutional Ne
 # Results
 
 
-## Impact of Different Parameters meanwhile Training
+## Impact of Different Parameters Meanwhile Training
 
-Experiments to check how much the leraning rate and the activation function affect the model's performance.
+Experiments to check how much the learning rate and the activation function affect the model's performance.
 
 ### Experiment 1 - CNN with LeakyReLU activation function, SGD optimizer with lr=0.0001
 
@@ -59,7 +59,7 @@ Experiments to leverage transfer learning and fine-tuning to improve the model's
 
 ### 2.1 - Transfer Learning from ImageNet
 
-#### Experiment 1 - Fine tuning
+#### Experiment 1 - Fine-tuning
 
 ![](docs/img/tensorboard_alexnet_fine_tuning.png)
 
@@ -101,7 +101,7 @@ All metrics in one plot:
 - Test accuracy: 0.1856
 - Test loss: 2.628
 
-The experiment has a low accuracy and high loss, which is expected since the model was trained on a different dataset, 
+The experiment has low accuracy and high loss, which is expected since the model was trained on a different dataset, 
 but it performs better than if the model wasn't trained at all.
 
 #### Experiment 3 - Fine-tuning MNIST CNN for SVHN dataset
