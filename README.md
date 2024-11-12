@@ -1,5 +1,15 @@
 # Computer Vision Experiments
 
+Computer Vision classification experiments training and testing Convolutional Neural Networks (CNNs) to analyze the impact of different parameters and the use of techniques such as feature extraction and transfer learning.
+
+# Index
+
+1. Project Setup
+2. Results of Experiments
+   1. Impact of Different Parameters Meanwhile Training
+   2. Transfer Learning and Feature Extraction using pre-trained models
+   3. Differences between fine-tuning and feature extraction
+
 # 1. Project Setup
 
 For the setup of the project follow the instructions in the [SETUP.md](docs/SETUP.md) file.
@@ -28,12 +38,11 @@ For the setup of the project follow the instructions in the [SETUP.md](docs/SETU
 └── requirements.txt         # core dependencies of the library in pip format
 ```
 
-# Results
+# 2. Results of Experiments
 
+## Impact of Different Parameters Meanwhile Training
 
-## Task 1
-
-Experiments to check how much the leraning rate and the activation function affect the model's performance.
+Experiments to check how much the learning rate and the activation function affect the model's performance.
 
 ### Experiment 1 - CNN with LeakyReLU activation function, SGD optimizer with lr=0.0001
 
@@ -79,13 +88,13 @@ All metrics in one plot:
 
 ![](docs/plots/metrics_custom_cnn3_tanh.png)
 
-## Task 2
+## Transfer Learning and Feature Extraction using pre-trained models
 
 Experiments to leverage transfer learning and fine-tuning to improve the model's performance.
 
 ### 2.1 - Transfer Learning from ImageNet
 
-#### Experiment 1 - Fine tuning
+#### Experiment 1 - Fine-tuning
 
 ![](docs/img/tensorboard_alexnet_fine_tuning.png)
 
@@ -127,7 +136,7 @@ All metrics in one plot:
 - Test accuracy: 0.1856
 - Test loss: 2.628
 
-The experiment has a low accuracy and high loss, which is expected since the model was trained on a different dataset, 
+The experiment has low accuracy and high loss, which is expected since the model was trained on a different dataset, 
 but it performs better than if the model wasn't trained at all.
 
 #### Experiment 3 - Fine-tuning MNIST CNN for SVHN dataset
