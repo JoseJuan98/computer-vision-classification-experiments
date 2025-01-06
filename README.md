@@ -50,8 +50,6 @@ The purpose of this experiment was to assess the impact of a very low learning r
 
 With such a low learning rate, it is anticipated that the model may not fit adequately, as the small steps taken during gradient descent may not effectively optimize the parameter values.
 
-![](docs/img/tensorboard_custom_cnn1_sgd.png)
-
 - Test accuracy: 0.0994
 - Test loss: 2.30374
 
@@ -61,11 +59,14 @@ Consolidated metrics in a single plot:
 
 As expected, the results of this experiment show very low accuracy and high loss, confirming the hypothesis that a very low learning rate can hinder model performance.
 
+
+All metrics separately:
+
+![](docs/img/tensorboard_custom_cnn1_sgd.png)
+
 ### Experiment 2 - CNN with Adam optimizer and LeakyReLU activation function
 
 The purpose of this experiment was to asses the impact of the Adam optimizer and a LeakyReLU activation function.
-
-![](docs/img/tensorboard_custom_cnn2_adam.png)
 
 - Test accuracy: 0.4146
 - Test loss: 1.605
@@ -78,11 +79,14 @@ Consolidated metrics in a single plot:
 
 ![](docs/plots/metrics_custom_cnn2_adam.png)
 
+
+All metrics separately:
+
+![](docs/img/tensorboard_custom_cnn2_adam.png)
+
 ### Experiment 3 - CNN with Tanh as activation function and Adam optimizer
 
 The purpose of this experiment was to asses the impact of the Adam optimizer and a Tanh activation function.
-
-![](docs/img/tensorboard_custom_cnn3_tanh.png)
 
 - Test accuracy: 0.4117
 - Test loss: 1.6747
@@ -94,6 +98,10 @@ Consolidated metrics in a single plot:
 
 ![](docs/plots/metrics_custom_cnn3_tanh.png)
 
+All metrics separately:
+
+![](docs/img/tensorboard_custom_cnn3_tanh.png)
+
 ## Transfer Learning and Feature Extraction using pre-trained models
 
 Experiments to leverage transfer learning and fine-tuning to improve the model's performance.
@@ -102,14 +110,16 @@ Experiments to leverage transfer learning and fine-tuning to improve the model's
 
 #### Experiment 1 - Fine-tuning
 
-![](docs/img/tensorboard_alexnet_fine_tuning.png)
-
 - Test loss: 0.779.
 - Test accuracy: 0.7299.
 
 Consolidated metrics in a single plot:
 
 ![](docs/plots/metrics_alexnet_fine_tuning.png)
+
+All metrics separately:
+
+![](docs/img/tensorboard_alexnet_fine_tuning.png)
 
 #### Experiment 2 - Feature Extraction
 
@@ -128,14 +138,15 @@ Fine-tuning has a higher accuracy and lower loss than feature extraction. This i
 - Test loss: 0.1524
 - Test accuracy: 0.9588.
 
-![](docs/img/tensorboard_mnist_cnn.png)
-
 The experiment has a high accuracy and low loss, which is expected since the MNIST dataset is a simple dataset.
 
 Consolidated metrics in a single plot:
 
 ![](docs/plots/metrics_mnist_cnn_train.png)
 
+All metrics separately:
+
+![](docs/img/tensorboard_mnist_cnn.png)
 
 #### Experiment 2 - Pretrained MNIST CNN for SVHN dataset
 
@@ -150,11 +161,13 @@ but it performs better than if the model wasn't trained at all.
 - Test loss: 0.8541
 - Test accuracy: 0.767
 
-![](docs/img/tensorboard_svhn_fine_tuning.png)
-
 The experiment has a higher accuracy and lower loss than the previous one, which is expected since the model is being
  fine-tuned on the SVHN dataset.
 
 Consolidated metrics in a single plot:
 
 ![](docs/plots/metrics_svhn_fine_tuning.png)
+
+All metrics separately:
+
+![](docs/img/tensorboard_svhn_fine_tuning.png)
